@@ -1,0 +1,29 @@
+def addition(number_one, number_two):
+    return number_one + number_two
+
+def subtraction(number_one, number_two):
+    return number_one - number_two
+
+def multiplication(number_one, number_two):
+    return number_one * number_two
+
+def division(number_one, number_two):
+    if number_two == 0:
+        return "Ошибка"
+    else:
+        number_one / number_two
+
+operator = input("Выберите оператор(+ - * /): ")
+
+if operator == "+":
+    a = addition(int(input("Введите первое число: ")), int(input("Введите второе число: ")))
+    print(a)
+elif operator == "-":
+    s = subtraction(int(input("Введите первое число: ")), int(input("Введите второе число: ")))
+    print(s)
+elif operator == "*":
+    m = miltiplication(int(input("Введите первое число: ")), int(input("Введите второе число: ")))
+    print(m)
+elif operator == "/":
+    d = division(int(input("Введите первое число: ")), int(input("Введите второе число: ")))
+    print(d)
